@@ -1,0 +1,18 @@
+title: Kalkulus
+description: >-
+  Ruang lingkup materi yang akan dibahas pada matakuliah ini adalah konsep
+  bilangan real, fungsi, limit dan kekontinuan, turunan, dan aplikasi turunan
+template:
+  repo: kalkulus-template
+  name: kalkulus
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
